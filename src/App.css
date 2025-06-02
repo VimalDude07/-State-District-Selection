@@ -466,6 +466,10 @@ img {
   .arrowtext {
     font-size: 12px;
   }
+     .headingInput {
+    height: 20px;
+    width: 20px;
+  }
 }
 @media screen and (max-width: 380px) {
   .selectCheckBox {
