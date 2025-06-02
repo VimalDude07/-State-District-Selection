@@ -257,7 +257,6 @@ function Modal1() {
                       <div className="stateCheckBox1">
                         <div className="stateInput">
                           <input
-                            className="headingInput"
                             type="checkbox"
                             onChange={(event) => handleSelectData(event)}
                             value={data.state}
@@ -292,7 +291,6 @@ function Modal1() {
                   <div className="districtCheckbox">
                     <input
                       type="checkbox"
-                      className="headingInput"
                       onChange={(event) => allSelectData(event)}
                       id="all"
                       ref={selectAllRef}
