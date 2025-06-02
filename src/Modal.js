@@ -1,7 +1,7 @@
 import arrowImg from "./ImgReact/CaretRight.png";
 import cancelImg from "./ImgReact/XCircle.png";
 import arrowIcon from "./ImgReact/CaretDown.png";
-import BasicContainer from "./BasicContainer";
+import BasicContainer from "./BasicContainer";  
 import { useState, useRef, useEffect } from "react";
 // import { modalContext } from "./App1";
 
@@ -204,7 +204,7 @@ function Modal1() {
                       className="arrowicon"
                       htmlFor="increase"
                       style={{ rotate: show ? "180deg" : "0deg" }}
-                      src={arrowImg}
+                      src={arrowIcon}
                       alt=""
                     />
                   </div>
@@ -280,7 +280,7 @@ function Modal1() {
                             /{data.districts.length}
                           </div>
                         </div>
-                        <img className="arrowIcon1" src={arrowIcon} alt="" />
+                        <img className="arrowIcon1" src={arrowImg} alt="" />
                       </div>
                     </div>
                   ))}
