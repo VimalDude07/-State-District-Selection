@@ -1,50 +1,48 @@
-
-
 * {
-    padding: 0px;
-    margin: 0px;
-    font-family: inter, sans-serif;
-  }
-  :root {
-    --font-color: #30333b;
-    --input-color: #4c980f;
-    --background-color: #e7eaee;
-    --background-color1: #ffffff;
-    --font-color1: #6a728b;
-    --font-color2: #76819a;
-    --font-color3: #0b99ff;
-    --border-color: #d9dee4;
-    --background-color2: #c2c2c2;
-    --background-color3: #f6f7f8;
-    --background-color4: #d7f4ff;
-    --font-color4: #8894a9;
-  }
-  .openDisplay {
-    padding: 16px;
-  }
-  .heading {
-    display: flex;
-    gap: 13px;
-    align-items: center;
-    background-color: var(--background-color);
-    padding: 16px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  button {
-    cursor: pointer;
-  }
-  
-  input {
-    accent-color: var(--input-color);
-    width: 20px;
-    height: 20px;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  /* 
+  padding: 0px;
+  margin: 0px;
+  font-family: inter, sans-serif;
+}
+:root {
+  --font-color: #30333b;
+  --input-color: #4c980f;
+  --background-color: #e7eaee;
+  --background-color1: #ffffff;
+  --font-color1: #6a728b;
+  --font-color2: #76819a;
+  --font-color3: #0b99ff;
+  --border-color: #d9dee4;
+  --background-color2: #c2c2c2;
+  --background-color3: #f6f7f8;
+  --background-color4: #d7f4ff;
+  --font-color4: #8894a9;
+}
+.openDisplay {
+  padding: 16px;
+}
+.heading {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+button {
+  cursor: pointer;
+}
+
+input {
+  accent-color: var(--input-color);
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 
   input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -75,290 +73,363 @@
     display: block;
   
   } */
-  
-  .headingText {
-    font-size: 16px;
-    font-weight: 500;
-  }
+
+.headingText {
+  font-size: 16px;
+  font-weight: 500;
+}
+.title {
+  padding: 8px 16px 16px;
+  border: 1px solid var(--background-color);
+  background-color: var(--background-color1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.titleText {
+  color: var(--font-color1);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 0px 8px;
+}
+.titleBtn {
+  padding: 8px 8.5px;
+  color: var(--font-color3);
+  background-color: var(--background-color1);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.tilteLastText {
+  color: var(--font-color2);
+  font-size: 12px;
+  font-weight: 500;
+}
+.allinone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px ;
+}
+
+.modalBox {
+  width: 880px;
+  padding: 16px;
+  background-color: var(--background-color1);
+  border: 1px solid var(--background-color);
+  border-radius: 8px;
+}
+.modelTitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+.modelDetails {
+  padding: 24px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.selectDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+.stateCount {
+  color: var(--font-color);
+}
+.arrowtext {
+  color: var(--font-color3);
+}
+.arrowicon {
+  width: 12px;
+  height: 12px;
+  transition: 0.3s;
+}
+.stateDetais {
+  display: flex;
+}
+.showDetails {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stateData {
+  border: 1px solid var(--background-color);
+  border-radius: 8px;
+  padding: 12px 12px;
+  transition: 0.3s;
+}
+.showData {
+  overflow: scroll;
+}
+.selectedData {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0px;
+  border-top: 1px solid;
+  border-color: var(--border-color);
+}
+.showData::-webkit-scrollbar {
+  display: none;
+  text-decoration: none;
+}
+
+.stateName {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+  background-color: var(--background-color4);
+  border: 1px solid var(--background-color4);
+  border-radius: 4px;
+  color: var(--font-color3);
+}
+.districtCount {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 4px 4px 12px;
+  background-color: var(--background-color3);
+  border: 1px solid var(--border-color);
+  border-radius: 27px;
+}
+.districtName {
+  font-size: 14px;
+  font-weight: 500;
+}
+.cancelIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.arrowIcon1 {
+  width: 16px;
+  height: 16px;
+}
+.count {
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color3);
+  border-radius: 20px;
+  padding: 4px 8px;
+}
+.selectCheckBox {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.selectState {
+  border: 1px solid;
+  border-color: var(--border-color);
+  border-radius: 8px;
+  height: 313px;
+  overflow: scroll;
+}
+.selectState::-webkit-scrollbar {
+  display: none;
+}
+.selectShow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stateCheckBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid var(--border-color);
+  padding: 12px;
+}
+.stateCheckBox1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.stateInput {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.titleName {
+  padding: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--font-color4);
+}
+.titleName1 {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--font-color4);
+}
+.selectDistrict {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 1px solid var(--background-color);
+  border-radius: 8px;
+  padding: 16px;
+  width: 560px;
+  height: 280px;
+}
+.selectAllDistrict {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+.districtCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.alldata {
+  display: flex;
+  flex-direction: column;
+}
+
+.districtCheckbox1 {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  overflow: scroll;
+}
+.districtCheckbox1::-webkit-scrollbar {
+  display: none;
+}
+.districtName1 {
+  display: flex;
+  padding: 24px 0px 0px;
+  gap: 16px;
+}
+.sumbitBtn {
+  padding: 12px 38px;
+  background-color: var(--font-color3);
+  color: var(--background-color1);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.cancelBtn {
+  padding: 12px 38px;
+  background-color: var(--background-color1);
+  color: var(--font-color3);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  outline: none;
+}
+.btnTag {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+.hrline2 {
+  border: none;
+  height: 0.5px;
+  background-color: var(--border-color);
+  margin: 0px;
+}
+
+label {
+  cursor: pointer;
+}
+img {
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
   .title {
-    padding: 8px 16px 16px;
-    border: 1px solid var(--background-color);
-    background-color: var(--background-color1);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-  }
-  .titleText {
-    color: var(--font-color1);
-    font-size: 14px;
-    font-weight: 500;
-    padding: 0px 0px 8px;
-  }
-  .titleBtn {
-    padding: 8px 8.5px;
-    color: var(--font-color3);
-    background-color: var(--background-color1);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-  }
-  
-  .tilteLastText {
-    color: var(--font-color2);
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .allinone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .modal {
-    background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0px 20px;
-    
-  }
-  
-  
-  .modalBox {
-    width: 880px;
-    padding: 16px;
-    background-color: var(--background-color1);
-    border: 1px solid var(--background-color);
-    border-radius: 8px;
-  }
-  .modelTitle {
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--font-color);
-  }
-  .modelDetails {
-    padding: 24px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  
-  .selectDetails {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.3s;
-  }
-  .stateCount {
-    color: var(--font-color);
-  }
-  .arrowtext {
-    color: var(--font-color3);
-  }
-  .arrowicon {
-    width: 12px;
-    height: 12px;
-    transition: 0.3s;
-  }
-  .stateDetais {
-    display: flex;
-  }
-  .showDetails {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .stateData {
-    border: 1px solid var(--background-color);
-    border-radius: 8px;
-    padding: 12px 12px ;
-    transition: 0.3s;
-  
-  
-  }
-  .showData{
-    overflow: scroll;
+    padding: 4px 8px;
   }
   .selectedData {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 0px;
-    border-top: 1px solid;
-    border-color: var(--border-color);
-    
+    flex-wrap: wrap;
   }
-  .showData::-webkit-scrollbar{
-    display:none ;
-    text-decoration: none;
-  
-  }
-  
-  .stateName {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 4px 8px;
-    background-color: var(--background-color4);
-    border: 1px solid var(--background-color4);
-    border-radius: 4px;
-    color: var(--font-color3);
-  }
-  .districtCount {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 4px 4px 4px 12px;
-    background-color: var(--background-color3);
-    border: 1px solid var(--border-color);
-    border-radius: 27px;
-  }
-  .districtName {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .cancelIcon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .arrowIcon1 {
-    width: 16px;
-    height: 16px;
-  }
-  .count {
-    border: 1px solid var(--border-color);
-    background-color: var(--background-color3);
-    border-radius: 20px;
-    padding: 4px 8px;
-  }
-  .selectCheckBox {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-  .selectState {
-    border: 1px solid;
-    border-color: var(--border-color);
-    border-radius: 8px;
-    height: 313px;
-    overflow: scroll;
-  }
-  .selectState::-webkit-scrollbar{
-    display: none;
-  }
-  .selectShow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .stateCheckBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-top: 1px solid var(--border-color);
-    padding: 12px;
-  }
-  .stateCheckBox1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-  
-  }
-  .stateInput {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .titleName {
-    padding: 16px;
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--font-color4);
-  }
-  .titleName1 {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--font-color4);
+}
+@media screen and (max-width: 950px) {
+  .modalBox {
+    padding: 8px;
+    width: fit-content;
   }
   .selectDistrict {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    border: 1px solid var(--background-color);
-    border-radius: 8px;
-    padding: 16px;
-    width: 560px;
-    height: 280px;
+    padding: 8px;
+    width: fit-content;
   }
-  .selectAllDistrict {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--font-color);
-  }
-  .districtCheckbox {
-    display: flex;
-    align-items: center;
+
+  .selectCheckBox {
     gap: 12px;
   }
-  .alldata {
-    display: flex;
-    flex-direction: column;
+  .stateCheckBox1 {
+    gap: 18px;
   }
-  
+  .stateCheckBox {
+    padding: 12px 8px;
+  }
+  .stateInput {
+    gap: 8px;
+  }
+  .stateData {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .modalBox {
+    width: fit-content;
+  }
+  .selectDistrict {
+    width: 300px;
+  }
   .districtCheckbox1 {
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-  overflow: scroll;
+    grid-template-columns: repeat(2, 150px);
   }
-  .districtCheckbox1::-webkit-scrollbar{
-    display: none;
+  .stateData {
+    width: 550px;
   }
-  .districtName1 {
-    display: flex;
-    padding: 24px 0px 0px;
-    gap: 16px;
+}
+@media screen and (max-width: 630px) {
+  .districtCheckbox1 {
+    grid-template-columns: repeat(1, 150px);
   }
-  .sumbitBtn {
-    padding: 12px 38px;
-    background-color: var(--font-color3);
-    color: var(--background-color1);
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 8px;
-    border: none;
-    outline: none;
+  .selectDistrict {
+    width: 140px;
   }
-  .cancelBtn {
-    padding: 12px 38px;
-    background-color: var(--background-color1);
-    color: var(--font-color3);
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    outline: none;
+  .stateData {
+    width: 382px;
   }
-  .btnTag {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 12px;
+}
+@media screen and (max-width: 450px) {
+  .stateCheckBox1 {
+    gap: 9px;
   }
-  .hrline2 {
-    border: none;
-    height: 0.5px;
-    background-color: var(--border-color);
-  margin:0px;
+  .selectCheckBox {
+    gap: 8px;
+  }
+    .districtCheckbox1 {
+    grid-template-columns: repeat(1, 100px);
+  }
+    .selectDistrict {
+    width: 110px;
+    padding: 6px;
+  }
+  .stateData {
+    width: 328px;
+  }
+    .stateCheckBox {
+    padding: 12px 4px;
   }
   
-  label{
-    cursor: pointer;
-    
-  }
-  img{
-    cursor: pointer;
-  }
+}
