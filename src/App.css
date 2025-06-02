@@ -118,7 +118,7 @@ input {
   top: 0px;
   width: 100%;
   height: 100%;
-  padding: 50px 0px ;
+  padding: 50px 0px;
 }
 
 .modalBox {
@@ -405,10 +405,13 @@ img {
     grid-template-columns: repeat(1, 150px);
   }
   .selectDistrict {
-    width: 140px;
+    width: 150px;
   }
   .stateData {
     width: 382px;
+  }
+  label {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -416,20 +419,72 @@ img {
     gap: 9px;
   }
   .selectCheckBox {
-    gap: 8px;
+    gap: 15px;
   }
-    .districtCheckbox1 {
-    grid-template-columns: repeat(1, 100px);
+  .districtCheckbox1 {
+    grid-template-columns: repeat(1, 150px);
   }
-    .selectDistrict {
-    width: 110px;
+  .selectDistrict {
+    width: 150px;
+    height: 265px;
     padding: 6px;
+    gap: 15px;
+  }
+  .selectAllDistrict {
+    font-size: 12px;
   }
   .stateData {
-    width: 328px;
+    width: 318px;
   }
-    .stateCheckBox {
+  .stateCheckBox {
     padding: 12px 4px;
   }
-  
+  .stateInput {
+    gap: 4px;
+  }
+  .stateCheckBox1 {
+    gap: 6px;
+  }
+  .count {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+  input {
+    height: 12px;
+    width: 12px;
+  }
+  .districtName1 {
+    padding: 20px 0px 0px;
+    gap: 8px;
+  }
+  .stateCount {
+    font-size: 14px;
+  }
+  .modelTitle {
+    font-size: 18px;
+  }
+  .arrowtext {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .selectCheckBox {
+    gap: 6px;
+  }
+  .stateData {
+    width: 280px;
+  }
+  .districtCheckbox1 {
+    grid-template-columns: repeat(1, 100px);
+  }
+  .selectDistrict {
+    width: 130px;
+  }
+  .stateCheckBox1 {
+    gap: 3px;
+  }
+  .headingInput {
+    height: 20px;
+    width: 20px;
+  }
 }
